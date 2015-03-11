@@ -66,6 +66,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Detail" id="FaV-XH-2zI"/>
+                    <connections>
+                        <outlet property="buttonPressLabel" destination="S89-JG-wQ2" id="60F-x2-QqG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uDr-CW-F76" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -10,25 +10,18 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
+    @IBOutlet weak var buttonPressLabel: UILabel!
+    var segueLabelText: String = "";
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        buttonPressLabel.text = segueLabelText;
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-    */
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "showDetail" {
-            
-        }
     }
     
 

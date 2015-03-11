@@ -19,6 +19,13 @@ class MasterViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier! == "showDetail" {
+            let detailViewController = segue.destinationViewController as DetailViewController;
+            detailViewController.segueLabelText = "yay";
+        }
+    }
 
 
 }
