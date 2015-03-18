@@ -10,9 +10,15 @@ import UIKit
 
 class MasterViewController: UIViewController {
 
+    @IBOutlet weak var testImageView0: UIImageView!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let playlist = Playlist(index: 0)
+        testImageView0.image = playlist.icon
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,7 +29,8 @@ class MasterViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier! == "showDetail" {
             let detailViewController = segue.destinationViewController as DetailViewController;
-            detailViewController.segueLabelText = "yay";
+            detailViewController.playlist = Playlist(index: 0)
+            
         }
     }
 

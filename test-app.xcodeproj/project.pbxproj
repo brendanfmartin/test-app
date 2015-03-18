@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B52B67291AB25636008C3C14 /* Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52B67281AB25636008C3C14 /* Library.swift */; };
+		B52B672B1AB25711008C3C14 /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52B672A1AB25711008C3C14 /* Playlist.swift */; };
 		B5D224441AAFCF9700A47DA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D224431AAFCF9700A47DA1 /* AppDelegate.swift */; };
 		B5D224461AAFCF9700A47DA1 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D224451AAFCF9700A47DA1 /* MasterViewController.swift */; };
 		B5D224491AAFCF9700A47DA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5D224471AAFCF9700A47DA1 /* Main.storyboard */; };
@@ -28,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B52B67281AB25636008C3C14 /* Library.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Library.swift; sourceTree = "<group>"; };
+		B52B672A1AB25711008C3C14 /* Playlist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
 		B5D2243E1AAFCF9700A47DA1 /* test-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "test-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5D224421AAFCF9700A47DA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5D224431AAFCF9700A47DA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +89,8 @@
 				B5D224451AAFCF9700A47DA1 /* MasterViewController.swift */,
 				B5F418A81AAFD0DA00AF416A /* DetailViewController.swift */,
 				B5D224471AAFCF9700A47DA1 /* Main.storyboard */,
+				B52B67281AB25636008C3C14 /* Library.swift */,
+				B52B672A1AB25711008C3C14 /* Playlist.swift */,
 				B5F418AA1AAFD66600AF416A /* ModalViewController.swift */,
 				B5D2244A1AAFCF9700A47DA1 /* Images.xcassets */,
 				B5D2244C1AAFCF9700A47DA1 /* LaunchScreen.xib */,
@@ -219,7 +225,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5F418AB1AAFD66600AF416A /* ModalViewController.swift in Sources */,
+				B52B672B1AB25711008C3C14 /* Playlist.swift in Sources */,
 				B5F418A91AAFD0DA00AF416A /* DetailViewController.swift in Sources */,
+				B52B67291AB25636008C3C14 /* Library.swift in Sources */,
 				B5D224461AAFCF9700A47DA1 /* MasterViewController.swift in Sources */,
 				B5D224441AAFCF9700A47DA1 /* AppDelegate.swift in Sources */,
 			);
