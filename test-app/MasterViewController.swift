@@ -26,13 +26,17 @@ class MasterViewController: UIViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier! == "showDetail" {
+        if segue.identifier! == "showDetailPlaylistSegue" {
             let detailViewController = segue.destinationViewController as DetailViewController;
             detailViewController.playlist = Playlist(index: 0)
             
         }
     }
 
+    @IBAction func showDetail(sender: AnyObject) {
+        performSegueWithIdentifier("showDetailPlaylistSegue", sender: sender);
+    
+    }
 
 }
 

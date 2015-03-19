@@ -21,7 +21,7 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         
         if playlist != nil {
-            playlistCoverImage.image = playlist!.largeIcon
+            playlistCoverImage.image = playlist!.iconLarge
             playlistCoverImage.backgroundColor = playlist!.backgroundcolor
             playlistTitle.text = playlist!.title
             playlistDescription.text = playlist!.description
