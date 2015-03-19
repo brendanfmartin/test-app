@@ -13,7 +13,6 @@ class MasterViewController: UIViewController {
     @IBOutlet weak var testImageView0: UIImageView!
     
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         

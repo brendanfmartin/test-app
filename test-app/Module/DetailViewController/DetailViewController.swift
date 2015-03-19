@@ -10,7 +10,6 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
-    @IBOutlet weak var buttonPressLabel: UILabel!
     var playlist: Playlist?
     
     override func viewDidLoad() {
@@ -19,7 +18,7 @@ class DetailViewController: UIViewController {
         if playlist != nil {
             buttonPressLabel.text = playlist!.title
         }
-        
+
     }
 
     override func didReceiveMemoryWarning() {
