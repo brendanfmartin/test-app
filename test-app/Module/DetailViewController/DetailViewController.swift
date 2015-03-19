@@ -10,13 +10,21 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
+    @IBOutlet weak var playlistCoverImage: UIImageView!
+    @IBOutlet weak var playlistTitle: UILabel!
+    @IBOutlet weak var playlistDescription: UILabel!
+    
+    
     var playlist: Playlist?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         if playlist != nil {
-            buttonPressLabel.text = playlist!.title
+            playlistCoverImage.image = playlist!.largeIcon
+            playlistCoverImage.backgroundColor = playlist!.backgroundcolor
+            playlistTitle.text = playlist!.title
+            playlistDescription.text = playlist!.description
         }
 
     }

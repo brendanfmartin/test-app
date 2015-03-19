@@ -67,14 +67,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="Aut-16-dI4">
-                                <rect key="frame" x="16" y="64" width="304" height="276"/>
+                            <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="Aut-16-dI4">
+                                <rect key="frame" x="0.0" y="64" width="322" height="291"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Aut-16-dI4" secondAttribute="height" multiplier="32:29" id="wwU-ff-uuq"/>
                                 </constraints>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k4W-GT-Jpn">
-                                <rect key="frame" x="16" y="354" width="288" height="67"/>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k4W-GT-Jpn">
+                                <rect key="frame" x="0.0" y="153" width="320" height="180"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Goes Here" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aro-Yl-ZkC">
                                         <rect key="frame" x="20" y="10" width="118" height="20"/>
@@ -97,22 +97,26 @@
                                     <constraint firstItem="7mZ-Gg-vTO" firstAttribute="top" secondItem="aro-Yl-ZkC" secondAttribute="bottom" constant="9" id="7ct-IU-bKu"/>
                                     <constraint firstItem="aro-Yl-ZkC" firstAttribute="top" secondItem="k4W-GT-Jpn" secondAttribute="top" constant="10" id="PjG-D5-enu"/>
                                     <constraint firstAttribute="trailing" secondItem="7mZ-Gg-vTO" secondAttribute="trailing" constant="23" id="bZU-P4-AeY"/>
-                                    <constraint firstAttribute="width" secondItem="k4W-GT-Jpn" secondAttribute="height" multiplier="288:67" id="pOH-EH-ada"/>
                                     <constraint firstItem="aro-Yl-ZkC" firstAttribute="leading" secondItem="k4W-GT-Jpn" secondAttribute="leading" constant="20" id="q8s-7l-vXU"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.17647058823529413" green="0.18431372549019609" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="k4W-GT-Jpn" firstAttribute="top" secondItem="Aut-16-dI4" secondAttribute="bottom" constant="14" id="1kd-f0-fUA"/>
+                            <constraint firstItem="k4W-GT-Jpn" firstAttribute="top" secondItem="Aut-16-dI4" secondAttribute="bottom" constant="-100" id="1kd-f0-fUA"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Aut-16-dI4" secondAttribute="trailing" constant="-16" id="5Xa-OA-7uc"/>
-                            <constraint firstItem="k4W-GT-Jpn" firstAttribute="leading" secondItem="nmL-PI-XTl" secondAttribute="leadingMargin" id="VMb-bX-SaO"/>
-                            <constraint firstItem="Aut-16-dI4" firstAttribute="leading" secondItem="nmL-PI-XTl" secondAttribute="leadingMargin" id="bVb-3s-J8v"/>
+                            <constraint firstItem="k4W-GT-Jpn" firstAttribute="leading" secondItem="nmL-PI-XTl" secondAttribute="leadingMargin" constant="-16" id="VMb-bX-SaO"/>
+                            <constraint firstItem="Aut-16-dI4" firstAttribute="leading" secondItem="nmL-PI-XTl" secondAttribute="leadingMargin" constant="-16" id="bVb-3s-J8v"/>
                             <constraint firstItem="Aut-16-dI4" firstAttribute="top" secondItem="oCj-EM-4dk" secondAttribute="bottom" id="fOd-yA-giJ"/>
-                            <constraint firstItem="k4W-GT-Jpn" firstAttribute="trailing" secondItem="nmL-PI-XTl" secondAttribute="trailingMargin" id="ikq-Gs-6w1"/>
+                            <constraint firstItem="k4W-GT-Jpn" firstAttribute="trailing" secondItem="nmL-PI-XTl" secondAttribute="trailingMargin" constant="-16" id="ikq-Gs-6w1"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Detail" id="FaV-XH-2zI"/>
+                    <connections>
+                        <outlet property="playlistCoverImage" destination="Aut-16-dI4" id="r8t-dq-wNd"/>
+                        <outlet property="playlistDescription" destination="7mZ-Gg-vTO" id="kXA-Ko-F93"/>
+                        <outlet property="playlistTitle" destination="aro-Yl-ZkC" id="IWT-sD-ci6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uDr-CW-F76" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
